@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400);
+
+h3{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+p {
+    color:#6D676F;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p > span {
+    color: black;
+    font-weight: bold;
+}
+
+p.negrita {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    border-bottom: 3px solid red;
+}
+
+#what-is-it{
+    padding: 80px 0 40px;
+}
+
+#how-it-works{
+    background-color: #FFAFAF ;
+}
+
+#how-it-works, #info {
+    padding: 30px 0 40px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+#how-it-works h2, #info h2, #what-is-it h2 {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    ç
+    color: #D0021B;   
+    text-align: center; 
+}
+.introduction {
+    padding: 0 5%;
+}
+
+#what-is-it img {
+    width: 100%;
+}
+
+#what-is-it{
+    color: #D0021B;
+}
+
+.navbar-brand{
+    padding: 0
+}
+
+.navbar-brand img {
+    width: 233px;
+    height: 50px;      
+}
+
+#info img{
+    margin-top: 20px;}
+
+.cita{
+    padding: 0 5%;
+}
+
+#footer p{
+    text-align: center;
+    background-color: #D0021B;
+    color: white !important;
+    font-size: 1.2em;
+    height: 50px;
+    line-height: 50px;
+}
