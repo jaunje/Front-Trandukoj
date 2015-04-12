@@ -38,8 +38,8 @@
       
       <ul class="nav navbar-nav navbar-right">
          
-          <li><a href="#what-is-it">What is it ?</a></li>
-          <li><a href="#how-it-works">How it works ?</a></li>
+          <li><a id="btnWhat" href="#what-is-it">What is it ?</a></li>
+          <li><a id="btnHow" href="#how-it-works">How it works ?</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>   
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Count</a></li>  
       </ul>
@@ -155,5 +155,28 @@ This package can retrieve translations of text for a project using the Tradukoj.
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#btnWhat').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+              scrollTop: $('#what-is-it').offset().top
+        }, 1000);
+    });
+    $('#btnHow').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+              scrollTop: -50 + $('#how-it-works').offset().top
+        }, 1000);
+    });
+
+
+     $('.nav a').on('click', function(){
+    $(".btn-navbar").click(); //bootstrap 2.x
+    $(".navbar-toggle").click() //bootstrap 3.x
+    });
+
+  });
+</script>
 </body>
 </html>
